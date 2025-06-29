@@ -1,0 +1,137 @@
+                                                           🏠 Real Estate Data Analysis Project
+📌 Project Overview :
+  The Real Estate sector is a significant driver of economic growth and urban development. Understanding price trends, property features,
+  and market segments can provide valuable insights for buyers, sellers, and investors. In this project, 
+  I analyzed a real estate dataset to uncover key patterns and trends in property listings, focusing on:
+
+Price distributions across cities and property segments
+
+Impact of property features like furnishing, bedrooms, and class
+
+Data cleaning for inconsistent price formats
+
+Visualization of insights for decision-making
+
+The goal was to transform raw real estate data into actionable insights using Excel’s data analysis and visualization tools.
+
+🗂️ Dataset Details
+Source: Kaggle 
+
+Total Records: 9000+ property listings
+
+Key Fields:
+
+City: City name of the property
+
+Price: Property price in formats like “2.5 Cr”, “52.5 - 56.7 L”
+
+Bedrooms: Number of bedrooms
+
+Furnishing: Categorical (values like 0, 1, 2, 3, 4 representing furnishing status)
+
+Class: Property classification (A, B, O)
+
+Other property features
+
+🔧 Data Cleaning and Preparation
+Price Standardization
+One major challenge was inconsistent price formats:
+
+Some values were in crores (Cr), e.g. “2.5 Cr”
+
+Others were in lakhs (L), e.g. “52.5 L”
+
+Some were ranges, e.g. “52.5 - 56.7 L”
+
+Solution:
+
+Created Excel formulas to:
+
+Detect “Cr” or “L” via text search
+
+Extract numeric parts
+
+Convert all prices into a single unit (e.g. INR in Lakhs or Millions)
+
+For ranges, computed the average price
+
+📊 Data Analysis and Insights
+Price Distribution
+Majority of properties were priced under ₹1 crore
+
+Premium segment (₹2 crore+) concentrated in metro cities
+
+Identified outliers for further investigation
+
+Furnishing Impact
+Higher furnishing levels correlated with:
+
+Increased property prices
+
+Shorter average selling durations (where data available)
+Bedrooms vs. Pricing
+2 BHK and 3 BHK properties were the most listed
+
+Price per square foot increased significantly from 3 BHK to 4 BHK properties
+
+Class Analysis
+Class A properties:
+
+Higher price bands
+
+Predominantly luxury or premium listings
+
+Class B:
+
+Mid-market
+
+Class O:
+
+Other or miscellaneous category; varied pricing
+
+📈 Visualizations
+Created dynamic visualizations in Excel:
+
+Pivot tables for:
+
+Average price by city
+
+Count of properties by furnishing level
+
+Price distribution across classes
+
+Charts:
+
+Bar charts for price comparisons
+
+Pie charts for furnishing distribution
+
+Line graphs for price trends
+
+Formatted axes to display values in millions for readability, using custom number formats (e.g. #,##0,,"M").
+
+✅ Key Business Takeaways
+Properties with premium furnishing attract ~25-30% higher prices.
+
+Metro cities dominate high-value transactions.
+
+Data cleaning significantly improves accuracy of insights and reduces reporting errors.
+
+🛠️ Tools Used
+Microsoft Excel
+
+Formulas
+
+Pivot Tables
+
+Charts
+
+Data cleaning and transformation techniques
+
+💡 Next Steps
+Incorporate machine learning models for price prediction
+
+Expand analysis with geographic mapping tools
+
+Develop dashboards in Power BI for interactive insights
+
